@@ -1,0 +1,52 @@
+{
+    "categories": [
+        {
+            "id": 1,
+            "title": "Популярные блюда"
+        },
+        {
+            "id": 2,
+            "title": "Комбо"
+        },
+        {
+            "id": 3,
+            "title": "Креветки"
+        },
+        {
+            "id": 4,
+            "title": "Горячие блюда"
+        },
+        {
+            "id": 5,
+            "title": "Гарниры"
+        },
+        {
+            "id": 6,
+            "title": "Бургеры"
+        },
+        {
+            "id": 7,
+            "title": "Салаты"
+        },
+        {
+            "id": 8,
+            "title": "Закуски"
+        }
+    ],
+    "items": [
+        {
+            "id": 1,
+            "title": "Первый",
+            "price": 54.99,
+            "weight": 170.0,
+            "image": "assets/example_data/1.jpg"
+        },
+        {
+            "id": 2,
+            "title": "Второй",
+            "price": 124.99,
+            "weight": 255.0,
+            "image": "assets/example_data/2.jpg"
+        }
+    ]
+}
