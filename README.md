@@ -1,16 +1,8 @@
-# storefront_bloc_example
 
-A new Flutter project.
+# Storefront BLoc Example
 
-## Getting Started
+<img src="https://user-images.githubusercontent.com/2943278/122085880-5d5a9600-ce2d-11eb-9694-d1164a02731e.png" width="300">
 
-This project is a starting point for a Flutter application.
+An example project following Clean Architecture with BLoC library as state management solution.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+This example is also available as [web demo](https://storefront-bloc-example.netlify.app/).
