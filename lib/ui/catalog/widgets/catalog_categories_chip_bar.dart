@@ -66,7 +66,7 @@ class CategoriesChipBar extends StatelessWidget {
                       child: Text(categories[i].title,
                           style: const TextStyle(
                             fontWeight: FontWeight.w400,
-                            color: Colors.white30,
+                            color: Colors.white54,
                           )),
                     )));
     }
