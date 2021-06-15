@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import '../../../domain/entities/catalog.dart';
 
-import 'catalog_categories_action_bar.dart';
+import 'catalog_categories_chip_bar.dart';
 import 'catalog_items_grid.dart';
 
 class CatalogContent extends StatelessWidget {
@@ -10,6 +10,8 @@ class CatalogContent extends StatelessWidget {
     required this.catalog,
     required this.onCategorySelected,
     this.selectedCategoryId,
+    required this.horizontalPadding,
+    required this.itemSpacing,
   }) : super(key: key);
 
   final Catalog catalog;
@@ -18,22 +20,31 @@ class CatalogContent extends StatelessWidget {
 
   final int? selectedCategoryId;
 
+  final double horizontalPadding;
+
+  final double itemSpacing;
+
   @override
   Widget build(BuildContext context) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.stretch,
-      children: [
-        CategoriesActionBar(
-          categories: catalog.categories,
-          selectedCategoryId: selectedCategoryId,
-          onCategorySelected: onCategorySelected,
-          padding: 10.0,
-        ),
-        const SizedBox(height: 10.0),
-        ItemsGrid(
-          items: catalog.items,
-        ),
-      ],
+    return SingleChildScrollView(
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          CategoriesChipBar(
+            categories: catalog.categories,
+            selectedCategoryId: selectedCategoryId,
+            onCategorySelected: onCategorySelected,
+            itemSpacing: itemSpacing,
+            horizontalPadding: horizontalPadding,
+          ),
+          const SizedBox(height: 10.0),
+          ItemsGrid(
+            items: catalog.items,
+            horizontalPadding: horizontalPadding,
+            itemSpacing: itemSpacing,
+          ),
+        ],
+      ),
     );
   }
 }

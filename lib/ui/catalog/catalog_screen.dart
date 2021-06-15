@@ -4,7 +4,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../domain/bloc/catalog/catalog_bloc.dart';
 import '../../injector.dart';
 import '../loading_widget.dart';
-import 'catalog_content.dart';
+import 'widgets/catalog_content.dart';
 
 class CatalogScreen extends StatelessWidget {
   const CatalogScreen({Key? key}) : super(key: key);
@@ -16,10 +16,14 @@ class CatalogScreen extends StatelessWidget {
         title: const Text('Магазин'),
         centerTitle: true,
         elevation: 0,
+        leading: IconButton(
+          icon: const Icon(Icons.arrow_back),
+          onPressed: () {},
+        ),
         actions: [
           IconButton(
-            onPressed: () {},
             icon: const Icon(Icons.info_outline_rounded),
+            onPressed: () {},
           )
         ],
       ),
@@ -43,6 +47,8 @@ class CatalogScreenBody extends StatelessWidget {
                 .read<CatalogBloc>()
                 .add(SelectCatalogCategory(categoryId: id)),
             selectedCategoryId: state.selectedCategoryId,
+            itemSpacing: 12.0,
+            horizontalPadding: 16.0,
           );
         }
         return const LoadingWidget();

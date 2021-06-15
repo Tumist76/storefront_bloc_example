@@ -10,7 +10,6 @@ void main() {
 
 // ignore: use_key_in_widget_constructors
 class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -19,6 +18,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         brightness: Brightness.dark,
         primarySwatch: Colors.yellow,
+        accentColor: Colors.yellowAccent,
         primaryColor: const Color(0xFF000000),
         scaffoldBackgroundColor: const Color(0xFF000000),
       ),

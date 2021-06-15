@@ -36,17 +36,45 @@
     "items": [
         {
             "id": 1,
-            "title": "Первый",
-            "price": 54.99,
-            "weight": 170.0,
+            "title": "Пицца Пепперони",
+            "price": 359.00,
+            "weight": 390.0,
             "image": "assets/example_data/1.jpg"
         },
         {
             "id": 2,
-            "title": "Второй",
+            "title": "Салат",
             "price": 124.99,
-            "weight": 255.0,
+            "weight": 160.0,
             "image": "assets/example_data/2.jpg"
+        },
+        {
+            "id": 3,
+            "title": "Клаб сэндвич",
+            "price": 174.99,
+            "weight": 140.0,
+            "image": "assets/example_data/3.jpg"
+        },
+        {
+            "id": 4,
+            "title": "Суп",
+            "price": 149.00,
+            "weight": 210.0,
+            "image": "assets/example_data/4.jpg"
+        },
+        {
+            "id": 5,
+            "title": "Тыквенный крем-суп",
+            "price": 169.00,
+            "weight": 230.0,
+            "image": "assets/example_data/5.jpg"
+        },
+        {
+            "id": 6,
+            "title": "Поке с овощами",
+            "price": 329.00,
+            "weight": 340.0,
+            "image": "assets/example_data/6.jpg"
         }
     ]
 }
